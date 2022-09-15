@@ -38,14 +38,18 @@ travel(action: car)
 
 // 5. Trailing closure syntax
 
+
 func travell(action: () -> Void) {
     print("I'm getting ready to go.")
     action()
     print("I arrived!")
 }
+
+// Because its last parameter is a closure, we can call travel() using trailing closure syntax like this:
 travell() {
     print("I'm driving in my car")
 }
+// or eleminating the paranthesis
 travell {
     print("I'm driving in my car")
 }
